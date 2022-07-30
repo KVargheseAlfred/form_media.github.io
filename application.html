@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style= "color: blue;" align = "center">abc pvt ltd</h1>
+    <div align="center">
+    <HR>
+    <a href="Media elements.html">Media elements</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="index.html">Application form</a>
+    </div>
+    <hr>
+    <form action "submit.php" method = "post"> 
+        <fieldset>
+            <legend align = "center" style="color: blue;">Application form</legend>
+            <table align = "center">
+                <tr>
+                    <td style="color: blue;">Name</td>
+                    <td><input type="text" placeholder="Enter your name" autofocus></td>
+                </tr>
+                <tr>
+                    <td style="color: blue;">Application number</td>
+                    <td><input type="text" placeholder="Enter application number"></td>
+                </tr>
+                <tr>
+                    <td style="color: blue;">Password:</td>
+                    <td><input type="password" pattern=".{8,}"   required title="8 characters minimum"></td>
+                </tr>
+                <tr>
+                    <td style="color: blue;">Date of Birth:</td>
+                    <td><input type="date" placeholder="Enter your name"></td>
+                </tr>
+                <tr>
+                    <td style="color: blue;">Age:</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td style="color: blue;">Mobile Number:</td>
+                    <td><input type="tel" id="phone" name="phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        required placeholder="123-456-7890"></td>
+                </tr>
+                <tr>
+                    <td style="color: blue;">Email:</td>
+                    <td><input type="email" id="email" name="email" placeholder="abc@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td style="color: blue;">Gender:</td>
+                    <td >Male<input type="radio" id="male" name="a">Female<input type="radio" id="female" name="a"></td>
+                </tr>
+                <tr>
+                    <td style="color: blue;">Address:</td>
+                    <td><textarea></textarea></td>
+                </tr>
+
+                <tr>
+                    <td style="color: blue;">Languages Known:</td>
+                    <td>English<input type="checkbox" id="English">Tamil<input type="checkbox" id="Tamil">Malayalam<input type="checkbox" id="Telegu">English<input type="checkbox" id="Telegu">Hindi<input type="checkbox" id="Hindi"></td>
+                </tr>
+                <tr>
+                    <td style="color: blue;">Select your Course</td>
+                    <td>
+                    <select name="cars" id="cars">
+                        <option value="b.tech computer science enineering">b.tech computer science enineering</option>
+                        <option value="b.tech mechanical engineering">b.tech mechanical engineering</option>
+                        <option value="b.tech electronics and comm.">b.tech electronics and comm.</option>
+                        <option value="b.tech electrical engineering">b.tech electrical engineering</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: blue;">Upload your Photo</td>
+                    <td>
+                        <progress id="file" value="50" max="100"> 50% </progress>
+                        <label for="file">50% uploading completed</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="submit">
+                    </td>
+                </tr>
+
+            </table>
+    </form>
+</body>
+</html>
